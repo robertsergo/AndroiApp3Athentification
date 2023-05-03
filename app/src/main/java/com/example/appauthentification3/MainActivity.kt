@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val connecte = findViewById<Button>(R.id.connecter)
-        connecte.setOnClikListener{
+        connecte.setOnClickListener{
             Toast.makeText(this, "vous avez cliqué sur conneter", Toast.LENGTH_LONG)
         }
     }
