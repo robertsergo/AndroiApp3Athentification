@@ -39,6 +39,16 @@
         android:paddingLeft="10dp"
         android:layout_below="@id/courriel"/>
 
+    <TextView
+        android:id="@+id/erreur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/motdepasse"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
     <Button
         android:id="@+id/connecter"
         android:layout_width="wrap_content"
@@ -47,7 +57,6 @@
         android:background="@color/white"
         android:layout_marginTop="20dp"
         android:padding="10dp"
-
         android:text="connecter"
         android:textColor="@color/black"/>
 
