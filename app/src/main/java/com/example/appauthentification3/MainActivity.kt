@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
            // Toast.makeText(this, "user name ou mot de passe incorrect!!!", Toast.LENGTH_LONG).show()
         }else if(courrielEntree.trim() == courrielValide && motDePasseEntree.trim() == motDePasseValide){
                 //Toast.makeText(this, "Bienvenue $courrielEntree", Toast.LENGTH_LONG).show()
+                courriel.setText("")
+                motDePasse.setText("")
 
            // intente explicite: pour demarrer une nouvelle activité
             val intentToHomeActivite: Intent = Intent(this, HomeActivity::class.java)
