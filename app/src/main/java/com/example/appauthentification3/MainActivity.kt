@@ -1,5 +1,6 @@
 package com.example.appauthentification3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -38,7 +39,12 @@ class MainActivity : AppCompatActivity() {
                 er.visibility = View.VISIBLE
            // Toast.makeText(this, "user name ou mot de passe incorrect!!!", Toast.LENGTH_LONG).show()
         }else if(courrielEntree.trim() == courrielValide && motDePasseEntree.trim() == motDePasseValide){
-                Toast.makeText(this, "Bienvenue $courrielEntree", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this, "Bienvenue $courrielEntree", Toast.LENGTH_LONG).show()
+
+           // intente explicite: pour demarrer une nouvelle activité
+            val intentToHomeActivite: Intent = Intent(this, HomeActivity::class.java)
+                intentToHomeActivite.putExtra("email", courrielEntree)
+                startActivity(intentToHomeActivite)
             }
 
 
