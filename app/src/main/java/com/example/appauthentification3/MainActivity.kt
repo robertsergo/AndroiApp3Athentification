@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val er = findViewById<TextView>(R.id.erreur)
 
 
-        val motDePasseValide = "12345"
+        val motDePasseValide = "1234"
         val courrielValide = "robert@gmail.com"
 
 
