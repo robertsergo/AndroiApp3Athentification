@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logofacebook2" />
+
+    <EditText
+        android:id="@+id/courriel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="textEmailAddress"
+        android:background="@color/white"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="10dp"
+        android:hint="exemple@gmail.com"
+        android:layout_below="@id/logo"/>
+
+    <EditText
+        android:id="@+id/motdepasse"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="mot de passe"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/courriel"/>
+
+    <Button
+        android:id="@+id/connecter"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@id/motdepasse"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+
+        android:text="connecter"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/creerCompte"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Créer un compte?"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/connecter"
+        android:layout_below="@id/motdepasse"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="130dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Besoin d'aise?"
+        android:textColor="@color/white"
+       android:layout_marginTop="150dp"
+        android:layout_below="@id/creerCompte"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
