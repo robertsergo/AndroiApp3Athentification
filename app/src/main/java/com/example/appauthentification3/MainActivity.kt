@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
             }else if(courrielEntree.trim() != courrielValide || motDePasseEntree.trim() != motDePasseValide){
                 er.text = "les champs doivent etre remplis convenablement"
                 er.visibility = View.VISIBLE
-           // Toast.makeText(this, "user name ou mot de passe incorrect!!!", Toast.LENGTH_LONG).show()
-        }else if(courrielEntree.trim() == courrielValide && motDePasseEntree.trim() == motDePasseValide){
+            // Toast.makeText(this, "user name ou mot de passe incorrect!!!", Toast.LENGTH_LONG).show()
+            }else if(courrielEntree.trim() == courrielValide && motDePasseEntree.trim() == motDePasseValide){
                 //Toast.makeText(this, "Bienvenue $courrielEntree", Toast.LENGTH_LONG).show()
                 courriel.setText("")
                 motDePasse.setText("")
