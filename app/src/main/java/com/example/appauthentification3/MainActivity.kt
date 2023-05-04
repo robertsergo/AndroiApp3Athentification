@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         val er = findViewById<TextView>(R.id.erreur)
 
 
-        val motDePasseValide = "1234"
-        val courrielValide = "robert@gmail.com"
+        val motDePasseValide = "admin"
+        val courrielValide = "admin"
 
 
         connecte.setOnClickListener{

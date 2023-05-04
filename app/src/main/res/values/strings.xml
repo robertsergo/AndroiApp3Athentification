@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">AppAuthentification3</string>
     <string name="home_activity_title">Accueil</string>
+    <string-array name="posts">
+        <item>post 1</item>
+        <item>post 2</item>
+        <item>post 3</item>
+        <item>post 4</item>
+        <item>post 5</item>
+    </string-array>
 </resources>
