@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppAuthentification3</string>
+    <string name="home_activity_title">Accueil</string>
 </resources>

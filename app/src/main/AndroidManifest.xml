@@ -15,6 +15,7 @@
             android:name=".HomeActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
+            android:label="@string/home_activity_title"
             />
         <activity
             android:name=".MainActivity"
