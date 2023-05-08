@@ -42,14 +42,14 @@ class MainActivity : AppCompatActivity() {
                 //Toast.makeText(this, "Bienvenue $courrielEntree", Toast.LENGTH_LONG).show()
                 courriel.setText("")
                 motDePasse.setText("")
-<<<<<<< Updated upstream
+
 
                 // intente explicite: pour demarrer une nouvelle activité
-                val intentToHomeActivite: Intent = Intent(this, HomeActivity::class.java)
-=======
+                val intentToHomeActivite = Intent(this, HomeActivity::class.java)
+
                 // intente explicite: pour demarrer une nouvelle activité
                 val intentToHomeActivite = Intent(this, HomeActivity::class.java)
->>>>>>> Stashed changes
+
                 intentToHomeActivite.putExtra("email", courrielEntree)
                 startActivity(intentToHomeActivite)
         }
