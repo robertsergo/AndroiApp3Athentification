@@ -43,8 +43,13 @@ class MainActivity : AppCompatActivity() {
                 courriel.setText("")
                 motDePasse.setText("")
 
+
                 // intente explicite: pour demarrer une nouvelle activité
-                val intentToHomeActivite: Intent = Intent(this, HomeActivity::class.java)
+                val intentToHomeActivite = Intent(this, HomeActivity::class.java)
+
+                // intente explicite: pour demarrer une nouvelle activité
+                val intentToHomeActivite = Intent(this, HomeActivity::class.java)
+
                 intentToHomeActivite.putExtra("email", courrielEntree)
                 startActivity(intentToHomeActivite)
         }
