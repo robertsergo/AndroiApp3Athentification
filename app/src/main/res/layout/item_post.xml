@@ -3,40 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingBottom="10dp"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imagePost"
         android:layout_width="117dp"
         android:layout_height="117dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/image6"/>
+
 
     <TextView
         android:id="@+id/tvTitre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:text="Titre"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imagePost"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvDescription"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="8dp"
-        android:text="Une des cription qui va etre afficher ici qui ne vaut rien dire"
+        tools:text="Une description qui va etre afficher ici qui ne vaut rien dire"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imagePost"
         app:layout_constraintTop_toBottomOf="@+id/tvTitre" />
 
     <TextView
@@ -50,8 +55,8 @@
         android:textColor="@color/teal_200"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/textView2" />
+        app:layout_constraintStart_toStartOf="@id/imagePost"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription" />
 
     <TextView
         android:id="@+id/textView3"
@@ -64,5 +69,5 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
