@@ -1,5 +1,6 @@
 package com.example.appauthentification3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -25,6 +26,12 @@ class HomeActivity : AppCompatActivity() {
         listePosts.adapter = adapter
 
         listePosts.setOnItemClickListener{ adapterView, view, position, id ->
+            val clikkedPost = postsArray[position]
+            Intent(this, PostDetailsActivity::class.java).also {
+                it.putExtra("titre", clikkedPost.titre)
+                startActivity(it)
+
+            }
             Toast.makeText(this, "position: $position", Toast.LENGTH_LONG).show()
         }
 
